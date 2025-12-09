@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button, ButtonGroup } from "@heroui/button";
 import Link from "next/link";
+import { OnPressStartEvent } from "framer-motion";
 
 export default function Home() {
   return (
@@ -14,10 +15,14 @@ export default function Home() {
             <p className="text-2xl text-left">
               Confira diariamente a situação de risco de seu município e região.
             </p>
-            <Button color="primary" variant="ghost" className="mt-8">
-              <Link href="/painel" color="foreground">
-                Acesse o painel
-              </Link>
+            <Button
+              as={Link}
+              href="/painel"
+              color="primary"
+              variant="ghost"
+              className="mt-8"
+            >
+              Acesse o painel
             </Button>
           </div>
           <Image

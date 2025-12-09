@@ -10,11 +10,11 @@ import clsx from "clsx";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-const links = [
-  { name: "home", href: "/", icon: HomeIcon },
-  { name: "painel", href: "/painel", icon: ChartPieIcon },
-  { name: "boletins", href: "/boletins", icon: NewspaperIcon },
-  { name: "sobre", href: "/sobre", icon: InformationCircleIcon },
+export const links = [
+  { name: "Home", href: "/", icon: HomeIcon },
+  { name: "Painel", href: "/painel", icon: ChartPieIcon },
+  { name: "Boletins", href: "/boletins", icon: NewspaperIcon },
+  { name: "Sobre", href: "/sobre", icon: InformationCircleIcon },
 ];
 
 export default function NavLinks() {
