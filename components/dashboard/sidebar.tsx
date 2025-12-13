@@ -19,7 +19,7 @@ export const region = [
 export default function Sidebar() {
   return (
     <div>
-      <Card className="bg-transparent border-2 border-gray-200">
+      <Card className="bg-transparent border-2 border-gray-200 dark:border-gray-500">
         <CardBody className="gap-4">
           <Select label="Tipo de painel">
             {painel.map((item) => (
@@ -27,11 +27,11 @@ export default function Sidebar() {
             ))}
           </Select>
 
-          <Select label="Região">
+          {/* <Select label="Região">
             {region.map((item) => (
               <SelectItem key={item.key}>{item.label}</SelectItem>
             ))}
-          </Select>
+          </Select> */}
         </CardBody>
       </Card>
     </div>

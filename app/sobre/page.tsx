@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <div>
       <h1 className={title()}>Sobre o Observatório</h1>
-      <article className="text-justify mt-10 gap-4 flex flex-col">
+      <article className="text-justify mt-10 gap-4 flex flex-col mb-4">
         <h2 className="text-4xl mb-6 font-medium">História</h2>
 
         <p>
