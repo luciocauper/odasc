@@ -1,4 +1,4 @@
-import MapRender from "@/components/map/MapComponent";
+import MapRender from "@/components/map/mapRender";
 
 export default function PainelPage() {
   return (

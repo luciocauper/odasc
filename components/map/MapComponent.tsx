@@ -102,7 +102,7 @@ export default function MapComponent() {
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "Dados: Brasil.IO | &copy; OpenStreetMap",
-      maxZoom: 19,
+      maxZoom: 16,
       opacity: 1,
       className: "pt-br-map-tiles",
     }).addTo(map);
@@ -188,7 +188,7 @@ export default function MapComponent() {
 
       if (featuresFiltradas.length > 0) {
         const group = new L.FeatureGroup(geoJsonLayer.getLayers());
-        map.fitBounds(group.getBounds(), { padding: [50, 50] });
+        map.fitBounds(group.getBounds(), { padding: [10, 10] });
       }
 
       setIsLoading(false);
@@ -215,8 +215,8 @@ export default function MapComponent() {
   }, [initMap]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen p-4 md:p-8">
-      <div className="w-full max-w-5xl bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col h-[80vh]">
+    <div className="w-full h-full p-2">
+      <div className="w-full h-[calc(80vh-16px)] bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden flex flex-col">
         <div className="relative flex-1 w-full bg-slate-50">
           {isLoading && (
             <div className="absolute inset-0 z-[1000] bg-white flex flex-col items-center justify-center">

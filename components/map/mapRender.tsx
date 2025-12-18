@@ -34,6 +34,6 @@ const MapComponent = dynamic(() => import("./MapComponent"), {
   ),
 });
 
-export default function MapPage() {
+export default function MapRender() {
   return <MapComponent />;
 }
