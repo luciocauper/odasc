@@ -1,7 +1,9 @@
+import MapRender from "@/components/map/mapRender";
+
 export default function PainelPage() {
   return (
     <div>
-      <h1>Painel de Dados</h1>
+      <MapRender />
     </div>
   );
 }
